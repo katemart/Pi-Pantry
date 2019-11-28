@@ -7,5 +7,7 @@ public class StorageUnit {
 	
 	// put in product that was scanned and get the list
 	private HashMap<Product, List<Product>> productMap;
+	
+	
 
 }
