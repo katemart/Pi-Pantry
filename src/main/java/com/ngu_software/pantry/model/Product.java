@@ -5,20 +5,35 @@ import java.util.Date;
 
 public class Product {
 	
-	private String barcode;
+	private String barcode; // for barcode implementation with a reader
+	private Category category;
 	private String name;
 	private String description;
 	private Date date;
 	
-	public Product(String barcode, String name, String description, Date date) {
+	public Product(String barcode, Category category, String name, String description, Date date) {
+		super();
 		this.barcode = barcode;
+		this.category = category;
+		this.name = name;
+		this.description = description;
+		this.date = date;
+	}
+	
+	public Product(Category category, String name, String description, Date date) {
+		this.barcode = null;
+		this.category = category;
 		this.name = name;
 		this.description = description;
 		this.date = date;
 	}
 
 	public String getBarcode() {
-		return barcode;
+		return (barcode == null) ? "" : barcode;
+	}
+	
+	public Category getCategory() {
+		return category;
 	}
 
 	public String getName() {
