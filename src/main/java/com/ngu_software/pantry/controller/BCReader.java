@@ -26,6 +26,12 @@ import com.google.zxing.common.BitMatrix;
 import com.google.zxing.common.HybridBinarizer;
 import com.google.zxing.qrcode.QRCodeWriter;
 
+/**
+ * Barcode implementation (optional)
+ * @author Jimmy Nguyen
+ * @since 2019-Nov-27 7:34:42 PM
+ */
+
 public class BCReader {
 	
 	//https://dzone.com/articles/java-barcode-api
